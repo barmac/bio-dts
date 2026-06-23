@@ -6,6 +6,10 @@ All notable changes to [bio-dts](https://github.com/nikku/bio-dts) are documente
 
 _**Note:** Yet to be released changes appear here._
 
+## 0.15.3
+
+* `FIX`: correct error on too many `@return(s)` annotations
+
 ## 0.15.2
 
 * `FIX`: generate declaration map with local `file` pointers ([#25](https://github.com/nikku/bio-dts/pull/25))
