@@ -118,6 +118,16 @@ describe('transform', function() {
       });
 
 
+      it('should indicate multiple @return(s) in JSDoc', function() {
+
+        expect(() => {
+          run('post/jsdoc-multiple-returns', 'd.ts', postTransform);
+        }).to.throw(
+          /must specify zero or one @return\(s\) in JSDoc - found 2/
+        );
+      });
+
+
       it('should fail to parse JSX without explicit configuration', function() {
 
         expect(() => {
